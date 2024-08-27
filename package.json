@@ -1,0 +1,24 @@
+{
+  "name": "bhishma",
+  "version": "1.0.1",
+  "main": "index.js",
+  "bin": {
+    "bhishma": "bin/cli.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bhishma": "file:",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^10.1.8"
+  }
+}
