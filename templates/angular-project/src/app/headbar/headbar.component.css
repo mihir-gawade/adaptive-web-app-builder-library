@@ -51,6 +51,7 @@
 .head_bar .main_container .end_block .quick_links .quick_link_element a {
     text-decoration: none;
     color: var(--head-bar-text-color);
+    font-weight: 400;
 }
 
 .head_bar .main_container .end_block .quick_links .quick_link_element:hover a {

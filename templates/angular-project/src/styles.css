@@ -47,15 +47,15 @@ body {
 
     /* homepage */
     --homepage-background-color: #FFFFFF;
-    --homepage-background-color: #8ADAF1;
+    --homepage-background-color: #e6e3e3;
     --homepage-block-background-color: #f9f9f9;
     --homepage-block-hover-background-color: #f9f9f9;
 
     /* footer */
-    --footer-background-color: #f1f1f1;
-    --footer-division-color: #CECECF;
+    --footer-background-color: #c5c5c5;
+    --footer-division-color: #dfdfdf;
     --footer-main-text-color: #1E1E1E;
-    --footer-sub-text-color: #444445;
+    --footer-sub-text-color: #1E1E1E;
     --footer-text-highlight-color: #2A79C4;
 }
 
