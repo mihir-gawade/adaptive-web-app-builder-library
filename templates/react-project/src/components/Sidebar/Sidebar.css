@@ -1,32 +1,32 @@
+/* Sidebar styling */
 .sidebar {
-  position: absolute;
+  position: fixed; /* Fixed position for sidebar */
   top: 60px;
-  left: -300px;
-  width: 300px;
-  height: 100vh;
+  left: -300px; /* Sidebar is hidden by default */
+  width: 250px;
+  height: 100vh; /* Full height of the viewport */
   background-color: rgb(255, 255, 255);
   color: white;
-  transition: left 0.3s ease;
+  transition: left 0.3s ease; /* Smooth opening/closing */
   z-index: 1000;
 }
 
+/* Sidebar when open */
 .sidebar.open {
-  top: 60px;
-  left: 0;
-  background-color: rgb(255, 255, 255);
-  color: white;
+  left: 0; /* Show sidebar */
 }
 
+/* Sidebar toggle (hamburger icon) styling */
 .sidebar-toggle {
   position: fixed;
   top: 25px;
   left: 24px;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  z-index: 1100;
-  
+  z-index: 1100; /* Higher than sidebar to make it clickable */
 }
 
+/* Sidebar links styling */
 .sidebar-links {
   list-style-type: none;
   padding: 0;
@@ -48,27 +48,28 @@
   transition: color 0.3s ease;
 }
 
-.sidebar-links a:hover{
-  color: coral;
+.sidebar-links a:hover {
+  color: coral; /* Hover effect on links */
 }
 
+/* Responsive styling for mobile view */
 @media (max-width: 768px) {
   .sidebar-nav-links {
     display: block;
     width: 100%;
     background-color: white;
     list-style-type: none;
-  padding: 0;
-  margin: 20px 0 0 0;
-  position: relative;
-  z-index: 900;
+    padding: 0;
+    margin: 20px 0 0 0;
+    position: relative;
+    z-index: 900;
   }
 
   .sidebar-nav-links li {
     margin: 20px 0;
     padding-left: 20px;
   }
-  
+
   .sidebar-nav-links a {
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -76,10 +77,17 @@
     display: block;
     transition: color 0.3s ease;
   }
-  
-  .sidebar-nav-links a:hover{
+
+  .sidebar-nav-links a:hover {
     color: coral;
   }
 }
 
+/* Main content styling (to apply blur) */
+.main-content {
+  transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+}
 
+.main-content.blur {
+  filter: blur(5px); /* Apply blur when sidebar is open */
+}

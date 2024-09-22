@@ -1,13 +1,14 @@
 import React from 'react';
 import './Navbar.css';
 import Sidebar from '../Sidebar/Sidebar';
+import logo from '../../assets/Magnus.png';
 
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="https://www.rockwellautomation.com/content/dam/rockwell-automation/sites/images/logos/2019_Logo_rgb_RA_Bug-LeftText_color.svg" alt="Rockwell Automation" />
+        <img src={logo} alt={"Magnus"} />
       </div>
       <ul className="navbar-links">
         <li><a href="/">Home</a></li>
@@ -20,7 +21,7 @@ const Navbar = () => {
         <a href="/search"><i className="fa fa-search"></i></a>
         <a href="/login"><i className="fa fa-user"></i></a>
       </div>
-      <Sidebar />
+      <Sidebar/>
     </nav>
   );
 }

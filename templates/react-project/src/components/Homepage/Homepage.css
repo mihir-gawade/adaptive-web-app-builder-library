@@ -1,3 +1,11 @@
+:root {
+   --homepage-background-color: #f0f0f0; /* Example color, replace with your actual color */
+}
+
+body {
+   background-color: var(--homepage-background-color);
+}
+
 .homepage {
    background-color: var(--homepage-background-color);
    padding: 50px;
@@ -12,13 +20,58 @@
 }
 
 .homepage .main_container .element {
-   height: 35vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 50vh;
    width: 90vw;
    background-color: rgb(255, 255, 255);
    border-radius: 15px;
    transition: all 0.25s ease-in-out;
    cursor: pointer;
+   padding: 20px;
+   text-align: center; /* Center the text */
+}
 
+.homepage .main_container .element h2 {
+   margin-bottom: 15px;
+   font-size: 2rem;
+   color: #333;
+}
+
+.homepage .main_container .element p {
+   margin-bottom: 10px;
+   font-size: 1.2rem;
+   color: #666;
+}
+
+.homepage .main_container .element ol {
+   margin: 20px 0;
+   padding-left: 20px;
+   text-align: left; /* Align the list items to the left */
+}
+
+.homepage .main_container .element ol li {
+   margin-bottom: 10px;
+   font-size: 1rem;
+   color: #444;
+}
+
+.homepage .main_container .element button {
+   margin-top: 20px;
+   padding: 10px 20px;
+   font-size: 1rem;
+   color: white;
+   background-color: #007bff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.homepage .main_container .element button:hover {
+   background-color: #0056b3;
 }
 
 .homepage .main_container .element:hover {

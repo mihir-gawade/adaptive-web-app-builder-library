@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react'; 
 import './Sidebar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);  
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
+  const [isMobile, setIsMobile] = useState(false); 
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
+    document.querySelector('.main-content').classList.toggle('blur', !isOpen);
   };
 
   const handleResize = () => {
@@ -16,10 +17,8 @@ const Sidebar = () => {
   };
 
   useEffect(() => {
-    
+    setIsMobile(window.innerWidth <= 768); // Set initial value when component mounts
     window.addEventListener('resize', handleResize);
-
-    
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -28,7 +27,7 @@ const Sidebar = () => {
   return (
     <div className={`sidebar ${isOpen ? 'open' : ''}`}>
       <div className="sidebar-toggle" onClick={toggleSidebar}>
-        <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+        <FontAwesomeIcon icon={faBars} />
       </div>
 
       <ul className="sidebar-links">

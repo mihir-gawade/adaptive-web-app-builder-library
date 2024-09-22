@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 code {
@@ -13,5 +15,22 @@ code {
 }
 
 :root{
-  --homepage-background-color : #8adaf1;
+  --homepage-background-color : #f9f9f9;
+  --primary-color: #000000;
+  --secondary-color: #FFFFFF;
+  --accent-color: #FF5733;
+}
+
+/* Main content styling (to apply blur) */
+.main-content {
+  transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+}
+
+.main-content.blur {
+  filter: blur(5px); /* Apply blur when sidebar is open */
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  border-bottom: 2px solid var(--accent-color);
 }
