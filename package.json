@@ -1,9 +1,9 @@
 {
-  "name": "bhishma",
-  "version": "1.0.1",
+  "name": "magnus",
+  "version": "1.0.2",
   "main": "index.js",
   "bin": {
-    "bhishma": "bin/cli.js"
+    "magnus": "bin/cli.js"
   },
   "directories": {
     "lib": "lib"
@@ -16,9 +16,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "bhishma": "file:",
     "commander": "^12.1.0",
     "fs-extra": "^11.2.0",
-    "inquirer": "^10.1.8"
+    "inquirer": "^10.1.8",
+    "magnus": "file:"
   }
 }
