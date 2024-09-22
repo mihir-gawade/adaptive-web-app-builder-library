@@ -1,90 +1,88 @@
+# Magnus - Adaptive Web App Builder Library
 
-
-# Bhishma - Adaptive Web App Builder Library
-
-**Bhishma** is a powerful CLI tool designed to help developers quickly set up pre-compiled projects using popular frameworks such as Angular, React, and React Native. With just a few simple commands, you can generate a fully functional project and start coding right away.
+Magnus is a powerful CLI tool designed to help developers quickly set up pre-compiled projects using popular frameworks such as Angular, React, and React Native. With just a few simple commands, you can generate a fully functional project and start coding right away.
 
 ## Installation and Usage
 
 To run on your machine, use the following commands:
 
-1. Install the Bhishma CLI tool globally:
+1. **Install the Magnus CLI tool globally:**
 
-   ```bash
-   npm install -g bhishma
-   ```
+    ```bash
+    npm install -g magnus
+    ```
 
-2. Create a new project:
+2. **Create a new project:**
 
-   ```bash
-   bhishma create
-   ```
+    ```bash
+    magnus create
+    ```
 
-3. Follow the prompts:
-
-   - Select the desired framework (Angular, React, or React Native).
-   - Provide a name for your project.
+3. **Follow the prompts:**
+    - Select the desired framework (Angular, React, or React Native).
+    - Provide a name for your project.
 
 ## Step-by-Step Guide
 
-1. Open the command prompt (cmd).
-2. Navigate to the desktop:
+1. **Open the command prompt (cmd).**
 
-   ```bash
-   cd desktop
-   ```
+2. **Navigate to the desktop:**
 
-3. Create a new directory for your project:
+    ```bash
+    cd desktop
+    ```
 
-   ```bash
-   mkdir xyz
-   ```
+3. **Create a new directory for your project:**
 
-4. Move into the new directory:
+    ```bash
+    mkdir xyz
+    ```
 
-   ```bash
-   cd xyz
-   ```
+4. **Move into the new directory:**
 
-5. Install the Bhishma CLI tool globally:
+    ```bash
+    cd xyz
+    ```
 
-   ```bash
-   npm install -g bhishma
-   ```
+5. **Install the Magnus CLI tool globally:**
 
-6. Create a new project using Bhishma:
+    ```bash
+    npm install -g magnus
+    ```
 
-   ```bash
-   bhishma create
-   ```
+6. **Create a new project using Magnus:**
 
-7. Select the framework you want to use.
-8. Give a name to the project.
-9. Navigate into your project directory:
+    ```bash
+    magnus create
+    ```
 
-   ```bash
-   cd {your project name}
-   ```
+7. **Select the framework you want to use.**
 
-10. Run the project:
+8. **Give a name to the project.**
 
-    - If you selected **Angular**:
+9. **Navigate into your project directory:**
 
-      ```bash
-      ng serve
-      ```
+    ```bash
+    cd {your project name}
+    ```
 
-    - If you selected **React**:
+10. **Run the project:**
 
-      ```bash
-      npm start
-      ```
+    - **If you selected Angular:**
 
-    - If you selected **React Native** and have an Android emulator set up:
+        ```bash
+        ng serve
+        ```
 
-      ```bash
-      npx react-native run-android
-      ```
+    - **If you selected React:**
 
+        ```bash
+        npm start
+        ```
 
+    - **If you selected React Native and have an Android emulator set up:**
+
+        ```bash
+        npx expo start
+        ```
 
