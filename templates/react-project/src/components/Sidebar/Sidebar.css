@@ -1,32 +1,28 @@
-/* Sidebar styling */
 .sidebar {
-  position: fixed; /* Fixed position for sidebar */
+  position: fixed;
   top: 60px;
-  left: -300px; /* Sidebar is hidden by default */
+  left: -300px;
   width: 250px;
-  height: 100vh; /* Full height of the viewport */
-  background-color: rgb(255, 255, 255);
-  color: white;
-  transition: left 0.3s ease; /* Smooth opening/closing */
+  height: 100vh;
+  background-color: var(--sidebar-bg-color);
+  color: var(--sidebar-text-color);
+  transition: left 0.3s ease;
   z-index: 1000;
 }
 
-/* Sidebar when open */
 .sidebar.open {
-  left: 0; /* Show sidebar */
+  left: 0;
 }
 
-/* Sidebar toggle (hamburger icon) styling */
 .sidebar-toggle {
   position: fixed;
   top: 25px;
   left: 24px;
-  color: rgb(0, 0, 0);
+  color: var(--sidebar-text-color);
   cursor: pointer;
-  z-index: 1100; /* Higher than sidebar to make it clickable */
+  z-index: 1100;
 }
 
-/* Sidebar links styling */
 .sidebar-links {
   list-style-type: none;
   padding: 0;
@@ -41,7 +37,7 @@
 }
 
 .sidebar-links a {
-  color: rgb(0, 0, 0);
+  color: var(--sidebar-text-color);
   text-decoration: none;
   font-size: 18px;
   display: block;
@@ -49,15 +45,14 @@
 }
 
 .sidebar-links a:hover {
-  color: coral; /* Hover effect on links */
+  color: var(--sidebar-hover-color);
 }
 
-/* Responsive styling for mobile view */
 @media (max-width: 768px) {
   .sidebar-nav-links {
     display: block;
     width: 100%;
-    background-color: white;
+    background-color: var(--sidebar-bg-color);
     list-style-type: none;
     padding: 0;
     margin: 20px 0 0 0;
@@ -71,7 +66,7 @@
   }
 
   .sidebar-nav-links a {
-    color: rgb(0, 0, 0);
+    color: var(--sidebar-text-color);
     text-decoration: none;
     font-size: 18px;
     display: block;
@@ -79,15 +74,14 @@
   }
 
   .sidebar-nav-links a:hover {
-    color: coral;
+    color: var(--sidebar-hover-color);
   }
 }
 
-/* Main content styling (to apply blur) */
 .main-content {
-  transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+  transition: filter 0.3s ease;
 }
 
 .main-content.blur {
-  filter: blur(5px); /* Apply blur when sidebar is open */
+  filter: blur(5px);
 }
