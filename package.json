@@ -1,16 +1,17 @@
 {
-  "name": "magnus",
+  "name": "magns",
   "version": "1.0.2",
   "main": "index.js",
   "bin": {
-    "magnus": "bin/cli.js"
+    "magns": "bin/cli.js"
   },
   "directories": {
     "lib": "lib"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+"scripts": {
+  "start": "node bin/cli.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -19,6 +20,6 @@
     "commander": "^12.1.0",
     "fs-extra": "^11.2.0",
     "inquirer": "^10.1.8",
-    "magnus": "file:"
+    "magns": "file:"
   }
 }
